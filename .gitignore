@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Editor / IDE
+.idea/
+.vscode/
+
+# Hasil QR (generated)
+*.png
