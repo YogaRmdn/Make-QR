@@ -4,11 +4,11 @@
 Dibuat oleh Bangyog - github.com/YogaRmdn
 
 Contoh pemakaian:
-    python main.py                                  # mode interaktif
-    python main.py example.com                      # -> example.com.png
-    python main.py https://example.com -o kode.png  # nama file manual
-    python main.py example.com --fill "#00E5FF" --back "#0B0F19"
-    python main.py --help
+    python make.py                                  # mode interaktif
+    python make.py example.com                      # -> example.com.png
+    python make.py https://example.com -o kode.png  # nama file manual
+    python make.py example.com --fill "#00E5FF" --back "#0B0F19"
+    python make.py --help
 """
 
 from __future__ import annotations
@@ -415,9 +415,9 @@ def build_parser() -> argparse.ArgumentParser:
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=(
             "contoh:\n"
-            "  python main.py\n"
-            "  python main.py example.com\n"
-            '  python main.py example.com --fill "#00E5FF" --back "#0B0F19"\n'
+            "  python make.py\n"
+            "  python make.py example.com\n"
+            '  python make.py example.com --fill "#00E5FF" --back "#0B0F19"\n'
         ),
     )
     parser.add_argument("url", nargs="?", help="URL tujuan; kosongkan untuk mode interaktif")

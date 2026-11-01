@@ -43,33 +43,33 @@ pip install -r requirements.txt
 Mode interaktif:
 
 ```bash
-python main.py
+python make.py
 ```
 
 Langsung sekali jalan:
 
 ```bash
-python main.py example.com
+python make.py example.com
 # ✔ QR code berhasil dibuat → /.../example.com.png (29×29 modul, 1.9 KB)
 ```
 
 URL lengkap juga bisa, nama file tetap mengikuti domain:
 
 ```bash
-python main.py "https://sub.example.co.id/halaman?q=1"
+python make.py "https://sub.example.co.id/halaman?q=1"
 # → sub.example.co.id.png
 ```
 
 QR berwarna:
 
 ```bash
-python main.py example.com --fill "#00E5FF" --back "#0B0F19"
+python make.py example.com --fill "#00E5FF" --back "#0B0F19"
 ```
 
 Nama file manual:
 
 ```bash
-python main.py example.com -o hasil/qr-keren
+python make.py example.com -o hasil/qr-keren
 # → hasil/qr-keren.png
 ```
 
@@ -110,7 +110,7 @@ Nama file default diambil dari host URL:
 
 ```
 Make-QR/
-├── main.py            # seluruh aplikasi CLI
+├── make.py            # seluruh aplikasi CLI
 ├── requirements.txt   # dependensi
 └── README.md
 ```
